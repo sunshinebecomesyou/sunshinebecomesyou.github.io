@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(250, 248, 248);
+}
+#txt {
+    color: #000;
+}
+html{
+    font-family: 'Montaga', serif;
+}
+section{
+    min-height: 100vh;
+    width:100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: rgba(5, 5, 5, 0.048);
+}
+.container{
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left {
+    width: 50%;
+    height: 600px;
+    background: url(./img/mount.jpg)
+      no-repeat center / cover;
+    border-radius: 8px;
+  }
+.right{
+width: 51%;
+min-height: 230px;
+background-color:rgba(238, 205, 200, 0.8);
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 30px;
+border-radius: 8px;
+color: white;
+margin-left: -150px;
+}
+.right h1{
+    font-size: 40px;
+    font-weight: lighter;
+}
+p{
+    font-weight: bold;
+    font-size: 20px;
+}
+button{
+    outline: none;
+    border-radius: 50%;
+    position: relative;
+    left: 240px;
+    top: 10px;
+    z-index: 1;
+}
+#pause{
+    display: none;
+}
+#return{
+    display: inline;
+}
+button:hover{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+}
+@media screen and (max-width:768px){
+    .left {
+        width: 50%;
+        height: 500px;
+        background: url(./img/mount.jpg)
+          no-repeat center / cover;
+        border-radius: 8px;
+      }
+      .right{
+        width: 50%;
+        min-height: 130px;
+        background-color:rgba(238, 205, 200, 0.8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+        border-radius: 8px;
+        color: white;
+        margin-left: -150px;
+        }
+      .right h1{
+        font-size: 25px;
+        font-weight: lighter;
+    }
+    p{
+        font-weight: bold;
+        font-size: 15px;
+    }
+    button{
+        outline: none;
+        border-radius: 50%;
+        position: relative;
+        left: 240px;
+        top: 10px;
+        z-index: 1;
+    }
+}
+@media screen and (max-width:690px){
+
+    .left {
+        width: 50%;
+        height: 450px;
+        background: url(./img/mount.jpg)
+          no-repeat center / cover;
+        border-radius: 8px;
+      }
+    .right{
+        width: 60%;
+        min-height: 120px;
+        background-color:rgba(238, 205, 200, 0.8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+        border-radius: 8px;
+        color: white;
+        margin-left: -150px;
+        }
+        .right h1{
+            font-size: 20px;
+            font-weight: lighter;
+        }
+        p{
+            font-weight: bold;
+            font-size: 15px;
+        }
+    button {
+        outline: none;
+        border-radius: 50%;
+        position: relative;
+        left: 260px;
+        top: 10px;
+        z-index: 1;
+    }
+}

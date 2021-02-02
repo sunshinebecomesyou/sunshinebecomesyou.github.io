@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remember me</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div #music>
+        <audio id="my_music-1">
+            <source src="./music/real time study with me (lofi music, 2.5 hours) café ver (320 kbps).mp3">
+        </audio>
+        <audio id="my_music-2">
+            <source src="./music/Calm Your Mind (320 kbps).mp3">
+        </audio>
+        <audio id="my_music-3">
+            <source src="./music/RAINING IN ＯＳＡＫＡ (Lofi HipHop) (320 kbps).mp3">
+        </audio>
+        <audio id="my_music-4">
+            <source src="./music/RAINING IN ＳＨＡＮＧＨＡＩ (Lofi HipHop) (320 kbps).mp3">
+        </audio>
+        <audio id="my_music-5">
+            <source src="./music/Relax Your Mind (320 kbps).mp3">
+        </audio>
+
+    </div>
+    <section>
+        <div class="container">
+            <div class="left"></div>
+            <div class="right">
+                <div class="content">
+                    <div class="content-more">
+                        <h1>For my dear meisya</h1>
+                        <p>Aku engga bisa nemenin kamu untuk sekarang, aku cuma bisa bikinin ini buat nemenin kamu saat
+                            kamu lagi belajar.</p>
+                        <button id="return" onclick="returnaudio()"><img src="./img/icons8-circular-arrows-50.png"
+                                alt=""></button>
+                        <button id="left"><img src="./img/icons8-chevron-left-50.png" alt=""></button>
+                        <button id="play" onclick="playaudio()"><img src="./img/icons8-play-50.png" alt=""></button>
+                        <button id="pause" onclick="pauseaudio()"><img src="./img/icons8-pause-50.png" alt=""></button>
+                        <button id="right" onclick="rightaudio()"><img src="./img/icons8-chevron-right-50.png"
+                                alt=""></button>
+                    </div>
+                </div>
+    </section>
+    <script>
+        var q = document.getElementById("my_music-1");
+        var w = document.getElementById("my_music-2");
+        var e = document.getElementById("my_music-3");
+        var r = document.getElementById("my_music-4");
+        var t = document.getElementById("my_music-5");
+        var y = document.getElementById("play");
+        var z = document.getElementById("pause");
+        var a = document.getElementById("return");
+
+        function playaudio() {
+            q.play();
+            y.style.display = "none";
+            z.style.display = "inline";
+        }
+
+        function pauseaudio() {
+            q.pause();
+            y.style.display = "inline";
+            z.style.display = "none"
+        }
+        function returnaudio() {
+            q.load();
+            y.style.display = "inline";
+            z.style.display = "none"
+        }
+        function rightaudio() {
+            w.play();
+        }
+
+
+    </script>
+    <script></script>
+    <script></script>
+    <script src="/X0X010/jquery-1.12.3.min.js"></script>
+    <script src="/X0X010/main.js"></script>
+</body>
+
+</html>
